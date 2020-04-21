@@ -11,7 +11,7 @@ public class Session {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long session_id;
+    private Integer session_id;
 
     private String session_name;
     private String session_description;
@@ -28,11 +28,11 @@ public class Session {
     public Session(){
     }
 
-    public Long getSession_id() {
+    public Integer getSession_id() {
         return session_id;
     }
 
-    public void setSession_id(Long session_id) {
+    public void setSession_id(Integer session_id) {
         this.session_id = session_id;
     }
 

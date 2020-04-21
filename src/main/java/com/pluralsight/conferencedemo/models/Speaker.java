@@ -13,7 +13,7 @@ public class Speaker {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long speaker_id;
+    private Integer speaker_id;
 
     private String first_name;
     private String last_name;
@@ -32,11 +32,11 @@ public class Speaker {
     public Speaker() {
     }
 
-    public Long getSpeaker_id() {
+    public Integer getSpeaker_id() {
         return speaker_id;
     }
 
-    public void setSpeaker_id(Long speaker_id) {
+    public void setSpeaker_id(Integer speaker_id) {
         this.speaker_id = speaker_id;
     }
 
